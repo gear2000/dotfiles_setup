@@ -6,6 +6,9 @@ call pathogen#helptags()
 syntax off
 syntax on
 
+let mapleader = ","
+let g:pep8_map='<leader>8'
+
 noremap <leader>o <Esc>:CommandT<CR>
 noremap <leader>O <Esc>:CommandTFlush<CR>
 noremap <leader>m <Esc>:CommandTBuffer<CR>
@@ -22,6 +25,8 @@ set softtabstop=4
 set shiftwidth=4
 set autoindent
 "set paste
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
 
 "# Toggle colors
 call togglebg#map("<F6>")
@@ -33,6 +38,10 @@ hi ErrorMsg     guibg=Firebrick2 guifg=White
 
 let g:pyflakes_autostart = 0
 map <F7> :PyflakesToggle<cr>
+
+map <leader>td <Plug>TaskList
+map <leader>g :GundoToggle<CR>
+map <leader>a <Esc>:Ack!
 
 " # Turn off line numbers:
 "unset number 

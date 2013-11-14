@@ -38,6 +38,9 @@ git submodule add git://github.com/Raimondi/delimitMate.git vim/bundle/delmitmat
 git submodule add https://github.com/msanders/snipmate.vim.git vim/bundle/snipmate
 git submodule add https://github.com/vim-scripts/TaskList.vim.git vim/bundle/tasklist
 git submodule add https://github.com/ervandew/supertab.git vim/bundle/supertab
+git submodule add https://github.com/sjl/gundo.vim.git vim/bundle/gundo 
+git submodule add https://github.com/vim-scripts/TaskList.vim.git vim/bundle/tasklist
+git submodule add https://github.com/vim-scripts/pep8.git vim/bundle/pep8
 git submodule update
 git submodule foreach git submodule init
 git submodule foreach git submodule update
