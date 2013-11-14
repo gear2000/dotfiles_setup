@@ -17,6 +17,9 @@ rm -rf pathogen
 sudo apt-get install ruby ruby-dev -y
 sudo aptitude install ruby ruby-dev -y
 sudo apt-get install ctags make -y
+sudo apt-get install ack-grep -y
+sudo apt-get install rack -y
+
 
 cd ~/dotfiles
 git init
@@ -33,6 +36,10 @@ git submodule add git://github.com/vim-scripts/taglist.vim.git vim/bundle/taglis
 git submodule add git://github.com/vim-scripts/ctags.vim--Johnson.git vim/bundle/ctags
 git submodule add git://github.com/altercation/vim-colors-solarized.git vim/bundle/vim-colors-solarized
 git submodule add https://github.com/wincent/Command-T.git vim/bundle/command-t
+cd vim/bundle/command-t
+rake make
+
+
 git submodule add https://github.com/sontek/rope-vim.git vim/bundle/ropevim
 git submodule add git://github.com/Raimondi/delimitMate.git vim/bundle/delmitmate
 git submodule add https://github.com/msanders/snipmate.vim.git vim/bundle/snipmate
