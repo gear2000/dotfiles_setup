@@ -47,7 +47,11 @@ git submodule add https://github.com/vim-scripts/TaskList.vim.git vim/bundle/tas
 git submodule add https://github.com/ervandew/supertab.git vim/bundle/supertab
 git submodule add https://github.com/sjl/gundo.vim.git vim/bundle/gundo 
 git submodule add https://github.com/vim-scripts/TaskList.vim.git vim/bundle/tasklist
-git submodule add https://github.com/vim-scripts/pep8.git vim/bundle/pep8
+
+#git submodule add https://github.com/nvie/vim-flake8.git vim/bundle/vim-flake8
+
+
+
 git submodule update
 git submodule foreach git submodule init
 git submodule foreach git submodule update

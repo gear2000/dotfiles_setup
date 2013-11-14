@@ -7,7 +7,6 @@ syntax off
 syntax on
 
 let mapleader = ","
-let g:pep8_map='<leader>8'
 
 noremap <leader>o <Esc>:CommandT<CR>
 noremap <leader>O <Esc>:CommandTFlush<CR>
